@@ -57,10 +57,10 @@ public class Book {
 
     // Static class
     public static class ISBNGenerator {
-        private static int current = 987654;
+        private static int counter = 987654;
 
         public static int generate() {
-            return ++current;
+            return ++counter;
         }
     }
 
