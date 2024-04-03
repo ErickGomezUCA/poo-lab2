@@ -17,10 +17,48 @@ public class Book {
         this.pages = pages;
     }
 
-    public static class ISBNGenerator {
-        private static long current = 987654;
+    // Getters
 
-        public static long generateISBN() {
+    public int getIsbn() {
+        return isbn;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    // Setters
+
+    public void setIbsn(int isbn) {
+        this.isbn = isbn;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    // Static class
+    public static class ISBNGenerator {
+        private static int current = 987654;
+
+        public static int generateISBN() {
             return ++current;
         }
     }
