@@ -14,9 +14,11 @@ public class Library {
 
     public void showBooks() {
         books.forEach(book -> {
-
             System.out.println("Book N° " + books.indexOf(book));
-            System.out.println(" - Name: " + book);
+            System.out.println(" - ISBN: " + book.getIsbn());
+            System.out.println(" - Name: " + book.getName());
+            System.out.println(" - Author: " + book.getAuthor());
+            System.out.println(" - Pages: " + book.getPages());
         });
     }
 }
