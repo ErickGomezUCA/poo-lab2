@@ -12,6 +12,7 @@ public class Book {
     }
 
     public Book(String name, String author, int pages) {
+        this.isbn = ISBNGenerator.generate();
         this.name = name;
         this.author = author;
         this.pages = pages;
@@ -37,7 +38,7 @@ public class Book {
 
     // Setters
 
-    public void setIbsn(int isbn) {
+    public void setIsbn(int isbn) {
         this.isbn = isbn;
     }
 
@@ -58,7 +59,7 @@ public class Book {
     public static class ISBNGenerator {
         private static int current = 987654;
 
-        public static int generateISBN() {
+        public static int generate() {
             return ++current;
         }
     }
