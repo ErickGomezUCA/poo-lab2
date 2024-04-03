@@ -19,6 +19,7 @@ public class Library {
             System.out.println(" - Name: " + book.getName());
             System.out.println(" - Author: " + book.getAuthor());
             System.out.println(" - Pages: " + book.getPages());
+            System.out.println("-------------------------------");
         });
     }
 }
